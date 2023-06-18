@@ -15,3 +15,4 @@ let twoSum = function (nums, target) {
   return result;
 };
 // Please pass an array and a target when invoking the function
+// I have already solved this in leetcode, please find them here https://leetcode.com/submissions/detail/963369908/
