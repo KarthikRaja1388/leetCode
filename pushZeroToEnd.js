@@ -19,8 +19,7 @@ function pushZeroesToEnd(arr) {
     }
   });
 
-  let result = [...numberArray, ...zeroArray];
-  return result;
+  return [...numberArray, ...zeroArray];
 }
 
 console.log(pushZeroesToEnd(nums));
