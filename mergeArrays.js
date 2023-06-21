@@ -15,9 +15,7 @@ let nums1 = [1, 2, 3, 0, 0, 0],
   n = 3;
 
 function mergeArrays(arr1, arr2, m, n) {
-  let arr1Sliced = arr1.splice(0, m);
-  let arr2Sliced = arr2.splice(0, n);
-  let result = [...arr1Sliced, ...arr2Sliced];
+  let result = [...arr1.splice(0, m), ...arr2.splice(0, n)];
   return result.sort();
 }
 
