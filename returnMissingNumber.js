@@ -8,14 +8,13 @@
 
 let s = new Set([1, 2, 3, 4, 5]);
 let initalArr = Array.from(s);
-nums = [1, 5, 3, 4, 5];
+nums = [1, 2, 3, 3, 5];
 
 function findDuplicate(initialData, dataWithError) {
   let result = [];
 
   initalArr.filter((element) => {
-    if (!nums.includes(element)) {
-      console.log(element);
+    if (!dataWithError.includes(element)) {
       result.push(initalArr.indexOf(element), element);
     }
   });
