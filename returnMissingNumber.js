@@ -14,7 +14,8 @@ function findDuplicate(initialData, dataWithError) {
   let result = [];
 
   initalArr.filter((element) => {
-    if (!dataWithError.includes(element)) {
+    if (!nums.includes(element)) {
+      console.log(element);
       result.push(initalArr.indexOf(element), element);
     }
   });
