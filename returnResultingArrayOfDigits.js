@@ -13,7 +13,7 @@ function incrementTheLargeInt(digits) {
     nums += String(element);
   });
 
-  result = String(parseInt(nums) + 1);
+  let result = String(parseInt(nums) + 1);
   return [...result];
 }
 
