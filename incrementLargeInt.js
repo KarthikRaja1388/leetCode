@@ -12,16 +12,16 @@ Output: [1,2,4]
 
 
  */
-
-let digits = [1, 2, 3];
+let digits = [6, 1, 4, 5, 3, 9, 0, 1, 9, 5, 1, 8, 6, 7, 0, 5, 5, 4, 4];
 
 function incrementByOne(digits) {
   let digitsToString = "";
-  digits.forEach((element) => {
-    digitsToString += element;
-  });
-  let incrementedNuber = String(parseInt(digitsToString) + 1);
-  return [...incrementedNuber];
+  for (let i = 0; i < digits.length; i++) {
+    digitsToString += digits[i];
+  }
+
+  const bigInt = BigInt(digitsToString);
+  return [...String(bigInt + 1n)];
 }
 
 console.log(incrementByOne(digits));
